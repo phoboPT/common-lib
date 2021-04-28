@@ -11,7 +11,8 @@ interface UserPayload {
 declare global {
     namespace Express {
         interface Request {
-            currentUser?: UserPayload
+            currentUser?: UserPayload,
+            session: any
         }
     }
 }
