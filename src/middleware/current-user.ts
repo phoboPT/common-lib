@@ -13,6 +13,7 @@ declare global {
         interface Request {
             currentUser?: UserPayload,
             session: any
+
         }
     }
 }
