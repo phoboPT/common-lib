@@ -1,7 +1,7 @@
 import { CustomError } from "./custom-error";
 
 export class NotAuthorizedError extends CustomError {
-    statusCode = 400
+    statusCode = 401
 
     constructor() {
         super("Not Authorized", { from: "Auth" })
@@ -9,6 +9,6 @@ export class NotAuthorizedError extends CustomError {
     }
 
     serializeErrors() {
-        return [{ message: "Not Authorized" }]
+        return [{ message: "Not Authorized acess" }]
     }
 }
