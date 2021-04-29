@@ -19,7 +19,7 @@ export abstract class Listener<T extends Event> {
     }
     subscriptionOptions() {
         return this.client
-            .subscriptionOptions
+            .subscriptionOptions()
             .setDeliverAllAvailable()
             .setManualAckMode(true)
             .setAckWait(this.ackWait)
