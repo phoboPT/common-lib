@@ -2,10 +2,10 @@
   "name": "@mobileorg/common-lib",
   "version": "1.0.7",
   "description": "",
-  "main": "./build/index.js",
-  "typings": "./build/*.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
-    "./build/**/*"
+    "build/**/*"
   ],
   "scripts": {
     "clean": "del-cli ./build/*",
