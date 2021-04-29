@@ -1,5 +1,3 @@
-
-
 import { NextFunction, Request, Response } from 'express'
 import jwt from 'jsonwebtoken'
 
@@ -13,7 +11,6 @@ declare global {
         interface Request {
             currentUser?: UserPayload,
             session: any
-
         }
     }
 }
