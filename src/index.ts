@@ -15,3 +15,4 @@ export * from './events/base-publisher'
 export * from './events/subjects'
 export * from './events/vehicule-created-event'
 export * from './events/vehicule-updated.event'
+
