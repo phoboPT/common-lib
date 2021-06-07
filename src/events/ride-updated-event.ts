@@ -1,6 +1,6 @@
 import { Subjects } from "./subjects";
 
-export interface RideCreatedEvent {
+export interface RideUpdatedEvent {
     subject: Subjects.RideUpdated
 
     data: {
