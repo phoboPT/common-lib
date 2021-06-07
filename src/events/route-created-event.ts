@@ -1,7 +1,7 @@
 import { Subjects } from "./subjects";
 
-export interface RideCreatedEvent {
-    subject: Subjects.RideCreated
+export interface RouteCreatedEvent {
+    subject: Subjects.RouteCreated
 
     data: {
         id: string,
