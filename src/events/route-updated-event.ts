@@ -10,7 +10,7 @@ export interface RouteUpdatedEvent {
         startLocation: string
         endLocation: string
         availableTime: string
-        vehiculeId: string
+        vehicleId: string
         state: string
         description: string
         estimatedTime: string
