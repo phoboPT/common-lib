@@ -5,10 +5,16 @@ export interface RouteCreatedEvent {
 
     data: {
         id: string,
-        location: string,
-        userId: string,
-        type: string,
-        availableTime: string,
+        userId: string
+        type: string
+        startLocation: string
+        endLocation: string
+        availableTime: string
+        vehiculeId: string
         state: string
+        description: string
+        estimatedTime: string
+        startDate: string
+        userImage: string
     }
 }
