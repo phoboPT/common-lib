@@ -20,3 +20,5 @@ export * from './events/route-created-event'
 
 export * from './events/types/order-status'
 
+export * from './lib/search-route'
+
