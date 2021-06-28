@@ -35,7 +35,6 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
     //         "endLocation": "ESD",
     //     },
     // ]
-
     // The graph
     const adjacencyList = new Map();
 
@@ -72,10 +71,9 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
         visited[start] = false
 
     }
-    const start = "ESTG"
-    const end = "ESD"
+ 
 
-    printAll(adjacencyList, start, end, visit, start)
+    printAll(adjacencyList, src, dst, visit, src)
 
     return paths;
 }
