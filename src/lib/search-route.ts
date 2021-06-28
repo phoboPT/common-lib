@@ -1,4 +1,8 @@
-const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
+
+interface IVisit {
+    [key: string]: boolean
+}
+export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
     allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
     // routes = [
     //     {
@@ -49,12 +53,10 @@ const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]
     // Create the Graph
     allTargets.forEach(addNode);
     routes.forEach((route: any) => addEdge(route.startLocation, route.endLocation))
+    let visit: IVisit = { start: false };
 
-
-
-
-    const paths: Array<string> = []
-    const printAll = (graph: any, start: string, end: string, visited: any, all: string): void => {
+    const paths: string[] = []
+    const printAll = (graph: Map<string, string>, start: string, end: string, visited: IVisit, all: string): void => {
 
         if (start === end) {
             paths.push(all)
@@ -69,16 +71,12 @@ const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]
         })
         visited[start] = false
 
-
     }
     const start = "ESTG"
     const end = "ESD"
-    printAll(adjacencyList, start, end, {}, start)
 
+    printAll(adjacencyList, start, end, visit, start)
 
     return paths;
-
-
 }
 
-export default searchRoute;
