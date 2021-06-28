@@ -4,6 +4,7 @@ interface IVisit {
 }
 export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
     allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
+    
     // routes = [
     //     {
     //         "startLocation": "ESTG",
