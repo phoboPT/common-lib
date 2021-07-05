@@ -17,6 +17,8 @@ export * from './events/vehicule-created-event'
 export * from './events/vehicule-updated-event'
 export * from './events/route-updated-event'
 export * from './events/route-created-event'
+export * from './events/order-created-event'
+
 
 export * from './events/types/order-status'
 

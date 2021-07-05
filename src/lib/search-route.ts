@@ -40,8 +40,8 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
     const adjacencyList = new Map();
 
     // Add node
-    function addNode(airport: string) {
-        adjacencyList.set(airport, []);
+    function addNode(node: string) {
+        adjacencyList.set(node, []);
     }
 
     // Add edge, undirected
@@ -52,7 +52,7 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
 
     // Create the Graph
     allTargets.forEach(addNode);
-    routes.forEach((route: any) => addEdge(route.startLocation, route.endLocation))
+    routes.forEach((route: any) => addEdge(route        , route        ))
     let visit: IVisit = { start: false };
 
     const paths: string[] = []
