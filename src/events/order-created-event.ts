@@ -13,5 +13,6 @@ export interface OrderCreatedEvent {
 
         userId: string;
         expiresAt: string;
+        routeId: string;
     };
 }
