@@ -1,5 +1,4 @@
 import { OrderStatus } from './types/order-status';
-
 import { Subjects } from './subjects';
 
 export interface OrderUpdatedEvent {
@@ -10,7 +9,6 @@ export interface OrderUpdatedEvent {
         ticket: {
             id: string;
         };
-
         userId: string;
         expiresAt: string;
         routeId: string;
