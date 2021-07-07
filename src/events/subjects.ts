@@ -3,7 +3,7 @@ export enum Subjects {
     VehiculeUpdated = 'vehicule:updated',
     RouteCreated = 'route:created',
     RouteUpdated = 'route:updated',
-    OrderCreated='order:created',
-    OrderCancelled='order:cancelled'
+    OrderCreated = 'order:created',
+    OrderCancelled = 'order:cancelled',
+    OrderUpdated = 'order:updated',
 }
-
