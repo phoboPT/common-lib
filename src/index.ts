@@ -19,6 +19,7 @@ export * from './events/route-updated-event';
 export * from './events/route-created-event';
 export * from './events/order-created-event';
 export * from './events/order-cancelled-event';
+export * from './events/order-updated-event';
 
 export * from './events/types/order-status';
 
