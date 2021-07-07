@@ -1,10 +1,10 @@
-
 interface IVisit {
-    [key: string]: boolean
+    [key: string]: boolean;
 }
+/////////////////////////////start        //end       //allRoutes
 export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
     allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
-    
+
     // routes = [
     //     {
     //         "startLocation": "ESTG",
@@ -52,30 +52,26 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
 
     // Create the Graph
     allTargets.forEach(addNode);
-    routes.forEach((route: any) => addEdge(route        , route        ))
+    routes.forEach((route: any) => addEdge(route, route));
     let visit: IVisit = { start: false };
 
-    const paths: string[] = []
+    const paths: string[] = [];
     const printAll = (graph: Map<string, string>, start: string, end: string, visited: IVisit, all: string): void => {
-
         if (start === end) {
-            paths.push(all)
-            return
+            paths.push(all);
+            return;
         }
-        visited[start] = true
+        visited[start] = true;
         const destinations = adjacencyList.get(start);
         destinations.forEach((item: string) => {
             if (!visited[item]) {
-                printAll(graph, item, end, visited, all + "," + item)
+                printAll(graph, item, end, visited, all + ',' + item);
             }
-        })
-        visited[start] = false
+        });
+        visited[start] = false;
+    };
 
-    }
- 
-
-    printAll(adjacencyList, src, dst, visit, src)
+    printAll(adjacencyList, src, dst, visit, src);
 
     return paths;
-}
-
+};
