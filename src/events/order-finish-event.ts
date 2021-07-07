@@ -4,7 +4,7 @@ export interface OrderFinishEvent {
     subject: Subjects.OrderFinish;
     data: {
         id: string;
-        ticket: {
+        route: {
             id: string;
         };
     };

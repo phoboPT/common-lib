@@ -6,7 +6,7 @@ export interface OrderCreatedEvent {
     data: {
         id: string;
         status: OrderStatus;
-        ticket: {
+        route: {
             id: string;
         };
         version: number;
