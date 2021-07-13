@@ -2,7 +2,7 @@ interface IVisit {
     [key: string]: boolean;
 }
 /////////////////////////////start        //end       //allRoutes
-export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
+export const searchRoute = (src: string, dst: string, routes: any) => {
     allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
 
     // routes = [
@@ -71,7 +71,7 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
         visited[start] = false;
     };
 
-    printAll(adjacencyList, src, dst, visit, src);
+    printAll(adjacencyList, src, dst, visit, "");
 
     return paths;
 };
