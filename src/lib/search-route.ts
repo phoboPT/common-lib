@@ -71,7 +71,7 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
         visited[start] = false;
     };
 
-    printAll(adjacencyList, src, dst, visit, "");
+    printAll(adjacencyList, src, dst, visit, src);
 
     return paths;
 };
