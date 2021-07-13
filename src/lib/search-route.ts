@@ -2,7 +2,7 @@ interface IVisit {
     [key: string]: boolean;
 }
 /////////////////////////////start        //end       //allRoutes
-export const searchRoute = (src: string, dst: string, routes: any) => {
+export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
     allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
 
     // routes = [
@@ -51,7 +51,7 @@ export const searchRoute = (src: string, dst: string, routes: any) => {
     }
 
     // Create the Graph
-   
+    allTargets.forEach(addNode);
     routes.forEach((route: any) => addEdge(route.startLocation, route.endLocation));
     let visit: IVisit = { start: false };
 
