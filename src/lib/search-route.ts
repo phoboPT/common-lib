@@ -52,7 +52,7 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
 
     // Create the Graph
     allTargets.forEach(addNode);
-    routes.forEach((route: any) => addEdge(route, route));
+    routes.forEach((route: any) => addEdge(route.startLocation, route.endLocation));
     let visit: IVisit = { start: false };
 
     const paths: string[] = [];
