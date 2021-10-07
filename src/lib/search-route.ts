@@ -3,7 +3,7 @@ interface IVisit {
 }
 /////////////////////////////start        //end       //allRoutes
 export const searchRoute = (src: string, dst: string, routes: any, allTargets: string[]) => {
-    allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
+    // allTargets = 'ESTG ESE ESS ESA ESD'.split(' ');
 
     // routes = [
     //     {
