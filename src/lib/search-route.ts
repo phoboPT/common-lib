@@ -52,6 +52,7 @@ export const searchRoute = (src: string, dst: string, routes: any, allTargets: s
 
     // Create the Graph
     allTargets.forEach(addNode);
+    console.log(allTargets);
     routes.forEach((route: any) => addEdge(route.startLocation, route.endLocation));
     let visit: IVisit = { start: false };
 
