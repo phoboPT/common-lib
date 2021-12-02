@@ -1,20 +1,20 @@
-import { Subjects } from "./subjects";
+import { Subjects } from './subjects';
 
 export interface RouteUpdatedEvent {
-    subject: Subjects.RouteUpdated
+  subject: Subjects.RouteUpdated;
 
-    data: {
-        id: string,
-        userId: string
-        type: string
-        startLocation: string
-        endLocation: string
-        availableTime: string
-        vehicleId: string
-        state: string
-        description: string
-        estimatedTime: string
-        startDate: string
-        userImage: string
-    }
+  data: {
+    id: string;
+    userId: string;
+    type: string;
+    startLocation: string;
+    endLocation: string;
+    availableTime: string;
+    vehicleId: string;
+    state: string;
+    description: string;
+    estimatedTime: string;
+    startDate: string;
+    userImage: string;
+  };
 }

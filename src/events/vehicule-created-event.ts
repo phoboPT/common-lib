@@ -1,12 +1,12 @@
-import { Subjects } from "./subjects";
+import { Subjects } from './subjects';
 
 export interface VehiculeCreatedEvent {
-    subject: Subjects.VehiculeCreated
+  subject: Subjects.VehiculeCreated;
 
-    data: {
-        id: string,
-        location: string,
-        userId: string,
-        type: string
-    }
+  data: {
+    id: string;
+    location: string;
+    userId: string;
+    type: string;
+  };
 }
