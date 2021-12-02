@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
+// @ts-ignore
 import { validationResult } from 'express-validator';
 import { RequestValidationError } from '../errors/request-validation-error';
 
